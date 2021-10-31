@@ -45,7 +45,7 @@ const proxy = new HLSProxy({
   originHandler: async () => {
     return "https://maitv-vod.lab.eyevinn.technology";
   },
-  handleSegment: async (request, baseUrl) => {
+  segmentRedirectHandler: async (request, baseUrl) => {
     const redirectUrl = new URL(request.raw.url, baseUrl);
     return redirectUrl.href;
   }
