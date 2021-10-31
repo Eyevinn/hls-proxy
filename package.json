@@ -6,9 +6,13 @@
   "scripts": {
     "build": "tsc --project ./",
     "postversion": "git push && git push --tags",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"WARN: no test specified\" && exit 0"
   },
-  "author": "",
+  "author": "Eyevinn Technology AB <work@eyevinn.se>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyevinn/hls-proxy.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.6",
