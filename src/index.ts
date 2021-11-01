@@ -42,7 +42,7 @@ export class HLSProxy {
         if (request.url.match(/.m3u8/)) {
           const m3u = await this.fetchAndParseManifest(new URL(request.url, originBaseUrl));
           let manifest = m3u.toString();
-          if (request.url.match(/master.m3u8/)) {
+          if (request.url.match(/\/master.m3u8/)) {
             if (this.handlers.masterManifestHandler) {
               manifest = await this.handlers.masterManifestHandler(proxyRequest, new URL(originBaseUrl), m3u);
             }
