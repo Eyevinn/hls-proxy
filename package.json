@@ -1,6 +1,6 @@
 {
   "name": "@eyevinn/hls-proxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NPM library for proxying HLS requests",
   "main": "dist/index.js",
   "scripts": {
